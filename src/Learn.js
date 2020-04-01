@@ -8,6 +8,8 @@ import Forms from './components/learn/Forms'
 import Calculator from './components/learn/StateUp'
 import Composition from './components/learn/Composition'
 import ProductTable from './components/learn/Test'
+import JSXArray from './components/learn/JSXArray'
+import Hooks from './components/learn/Hooks'
 
 class Learn extends React.Component {
     componentDidMount () {
@@ -19,6 +21,7 @@ class Learn extends React.Component {
     render () {
         return (
             <Fragment>
+                <Hooks />
                 <ProductTable />
                 <Welcome name="pawel" />
                 <Clock />
@@ -28,6 +31,9 @@ class Learn extends React.Component {
                 <Forms />
                 <Calculator />
                 <Composition />
+                <ul>
+                    <JSXArray />
+                </ul>
             </Fragment>
         )
     }
